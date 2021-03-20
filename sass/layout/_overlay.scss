@@ -1,0 +1,29 @@
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms var(--cubic);
+
+&-title {
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--main-background-color);
+  text-align: left;
+}
+}
+
+.portfolio-element > .link:hover .overlay,
+.portfolio-element > .link:focus .overlay {
+  transform: translateY(0);
+}

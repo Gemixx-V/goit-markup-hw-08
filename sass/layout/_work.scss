@@ -1,0 +1,78 @@
+.section {
+  background-color: var(--main-background-color);
+}
+
+.container-title {
+  display: flex;
+  text-align: left;
+
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.section-work {
+  color: var(--secondary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container-list-item::before {
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 4px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+.icon-antenna::before {
+  background-image: url("../images/svg-images/antenna.svg");
+  background-size: 70px 70px;
+}
+.icon-clock::before {
+  background-image: url("../images/svg-images/clock.svg");
+  background-size: 70px 70px;
+}
+.icon-laptop::before {
+  background-image: url("../images/svg-images/laptop.svg");
+  background-size: 70px 70px;
+}
+.icon-astronaut::before {
+  background-image: url("../images/svg-images/astronaut.svg");
+  background-size: 70px 70px;
+}
+
+.section-title {
+  color: var(--secondary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  width: 270px;
+}
+
+.section-text {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
+  width: 270px;
+}
