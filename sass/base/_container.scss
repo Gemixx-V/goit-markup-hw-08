@@ -1,7 +1,39 @@
+// .container {
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   text-align: center;
+//   margin: 0 auto;
+// }
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: center;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+  .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+    .header & {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
