@@ -1,16 +1,15 @@
-.body {
-  background-color: var(--main-background-color);
-  color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Roboto, sans-serif;
+body {
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--secondary-text-color);
+  background-color: var(--main-background-color);
 }
 
 h1,
@@ -23,10 +22,6 @@ p {
   margin: 0;
 }
 
-ul {
-  list-style: none;
-}
-
 ul,
 ol {
   margin: 0;
@@ -35,23 +30,6 @@ ol {
 
 img {
   display: block;
-}
-
-a {
-  text-decoration: none;
-}
-a,
-button {
-  cursor: pointer;
-}
-.header {
-  border-bottom: 1px solid var(--border-header);
-}
-
-.header-portfolio {
-  border-bottom: 1px solid var(--border-header);
-}
-
-textarea {
-  resize: none;
+  max-width: 100%;
+  height: auto;
 }
